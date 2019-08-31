@@ -50,7 +50,7 @@ function getPilihanComputer () {
 
 function getHasil (comp, player, key) {
     if (player === comp){
-        return `Nice Combo! ${key} = ${comp}`;
+        return `Nice Combo! ${key} = ${player}`;
     } else {
         return 'Try Again';
     }
