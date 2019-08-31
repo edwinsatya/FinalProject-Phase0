@@ -59,7 +59,7 @@ function getHasil (comp, player, key) {
 const pilComputer = getPilihanComputer();
 const pGambarSoal = document.querySelector('.img-computer');
 pGambarSoal.addEventListener('click', function(){
-    pGambarSoal.setAttribute('src', '/image/speels/'+pilComputer+'.png');
+    pGambarSoal.setAttribute('src', 'image/speels/'+pilComputer+'.png');
     
 })
 
