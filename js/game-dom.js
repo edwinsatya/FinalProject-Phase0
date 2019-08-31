@@ -67,6 +67,8 @@ const pilihan = document.querySelectorAll('li img');
 var comboPlayer = ''
 pilihan.forEach(function(pil){
      pil.addEventListener('click', function(){
+        const info = document.querySelector('.info');
+        info.innerHTML = '';
         const pilPlayer = pil.className;
         if (pilPlayer === 'quas') {
             comboPlayer += 'q';
