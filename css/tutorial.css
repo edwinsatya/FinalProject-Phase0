@@ -6,7 +6,7 @@
     height: 100%;
   }
   body {
-    background-image: url('image/listSpeels.jpg');
+    background-image: url('/image/listSpeels.jpg');
     background-size: contain;
     background-position: center;
   }
