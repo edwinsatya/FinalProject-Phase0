@@ -44,11 +44,8 @@ table {
     border-spacing: 0;
 }
 
-
-/* Suwit Jawa 2.0 */
-
 body {
-    background-image: url(img/bg.png);
+    background-image: url();
     font-family: arial;
 }
 h1 {
@@ -139,8 +136,8 @@ img {
     box-shadow: 0 0 10px 5px limegreen;
 }
 
-.quas:active, .semut:active, .orang:active {
-    top: 2px;
+.quas:active, .wex:active, .exort:active {
+    top: 20px;
 }
 
   nav h1 {
@@ -154,7 +151,7 @@ img {
     position: relative;
     display: inline;
     font-family: 'Work Sans', sans-serif;
-    color:white;
+    color:red;
     text-decoration: none;
     font-size: 15px;
     padding: 10px;
