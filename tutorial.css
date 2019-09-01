@@ -7,8 +7,9 @@
   }
   body {
     background-image: url("image/listSpeels.jpg");
-    background-size: cover;
+    background-size: auto;
     background-position: center;
+    background-repeat: no-repeat;
   }
   nav img {
     left: 50px;
