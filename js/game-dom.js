@@ -1,6 +1,6 @@
 alert('Please Read menu List Speels firts, Before start playing this game!!!');
 alert('Blue = QUAS, Purple = WEX, Yellow = EXORT');
-alert('Rule for This Game : just click image 3 times, for example : click QUAS/Blue 3times = ColdSnap, You just have 10 chance for see your score, score di bawah 70 = NOOB!');
+alert('Rule for This Game : just click image 3 times, for example : click QUAS/Blue 3times = ColdSnap, You just have 10 chance for see your score, if score less then 70 = NOOB!');
 //input nama
 var tanya = true;
 while (tanya) {
@@ -124,7 +124,7 @@ if (tanya === false){
     })
     
     const pilihan = document.querySelectorAll('li img');
-    var comboPlayer = ''
+    var comboPlayer = '';
     var ronde = 0;
     var status = true;
 
@@ -135,11 +135,19 @@ if (tanya === false){
                     alert(`score anda ${score}, kamu adalah injoker ${inputNama}`);
                     ronde = 0;
                     score = 0;
-                    rollTebakSKill();    
+                    comboPlayer = '';
+                    resultComboPlayer = '';
+                    rollTebakSKill();
+                    if (comboPlayer.length === 2 || resultComboPlayer.length === 2) {
+                        comboPlayer = '';
+                        resultComboPlayer = '';
+                    }    
                  } else {
                     alert(`score anda ${score}, kamu adalah pro invoker ${inputNama}`);
                     ronde = 0;
                     score = 0;
+                    comboPlayer = '';
+                    resultComboPlayer = '';
                     rollTebakSKill();
                 }
              }
@@ -155,7 +163,7 @@ if (tanya === false){
             if (pilPlayer === 'exort') {
                 comboPlayer += 'e';
             }
-            if (comboPlayer.length === 3) {
+            if (comboPlayer.length >= 3) {
                 ronde++
                 const castSound = new Audio('sounds/cast.mp3');
                 castSound.play();
