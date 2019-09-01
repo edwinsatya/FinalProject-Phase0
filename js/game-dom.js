@@ -138,10 +138,6 @@ if (tanya === false){
                     comboPlayer = '';
                     resultComboPlayer = '';
                     rollTebakSKill();
-                    if (comboPlayer.length === 2 || resultComboPlayer.length === 2) {
-                        comboPlayer = '';
-                        resultComboPlayer = '';
-                    }    
                  } else {
                     alert(`score anda ${score}, kamu adalah pro invoker ${inputNama}`);
                     ronde = 0;
