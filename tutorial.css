@@ -7,7 +7,7 @@
   }
   body {
     background-image: url("image/listSpeels.jpg");
-    background-size: auto;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
   }
